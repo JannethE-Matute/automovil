@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Automoviles</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>placa</th>
+                        <th>marca</th>
+                        <th>modelo</th>
+                        <th>color</th>
+                        <th>precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let automovil of automoviles" class="text-center">
+                        <td>{{automovil.id}}</td>
+                        <td>{{automovil.placa}}</td>
+                        <td>{{automovil.marca}}</td>
+                        <td>{{automovil.modelo}}</td>
+                        <td>{{automovil.color}}</td>
+                        <td>{{automovil.precio}}</td>
+                        <td>
+                            <button class="btn btn-warning"> Editar</button>
+                            <button class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
